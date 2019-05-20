@@ -1,9 +1,9 @@
 
 
 
-firebase.auth().onAuthStateChanged(function (User) {
-    if (User) {
-        sessionStorage.setItem('User', JSON.stringify(User))
+firebase.auth().onAuthStateChanged(function (user) {
+    if (user) {
+        sessionStorage.setItem('user', JSON.stringify(user))
         window.location.href = 'main.html'
     } else {
         // User is signed out.
@@ -18,8 +18,8 @@ document.getElementById("login").addEventListener("click", function (event) {
     event.preventDefault()
 
     firebase.auth().signInWithEmailAndPassword(email, password)
-        .then(function (User) {
-            sessionStorage.setItem('User', JSON.stringify(User))
+        .then(function (user) {
+            sessionStorage.setItem('user', JSON.stringify(user))
             window.location.href = 'main.html'
         })
         .catch(function (error) {

@@ -9,7 +9,6 @@ document.getElementById("register").addEventListener("click", function (event) {
 function createUser(name, email, password) {
     firebase.auth().createUserWithEmailAndPassword(email, password).then(function (resp) {
         save(resp.user.uid, name)
-        window.location.href = 'index.html'
     }).catch(function (error) {
         var errorMessage = error.message;
         alert(errorMessage)
@@ -18,13 +17,12 @@ function createUser(name, email, password) {
 }
 
 function save(uid, name) {
-
-
     firebase.database().ref('users/' + uid).set({
         name: name
     }).then(function () {
-
+        window.location.href = 'main.html'
     }).catch(function (error) {
 
     });
+    console.log(uid);
 }

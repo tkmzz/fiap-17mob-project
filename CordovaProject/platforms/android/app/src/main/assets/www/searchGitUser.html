@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <div class="form-group col-md-3 text-center">
+        <form method="POST">
+            <div class="form-group">
+                <label>Search user</label>
+                <input class="form-control" id="userId" type="text" />
+            </div>
+            <div class="form-group">
+                <a class="btn btn-primary" id="search" class="btn btn-success">Search!</a>
+            </div>
+        </form>
+
+        <div><img id="camera"></div>
+        <div>
+            <h1 id="username" class="text-center"></h1>
+        </div>
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-auth.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.0.0/firebaseui.js"></script>
+    <script type="text/javascript" src="js/firebase.js"></script>
+    <script type="text/javascript" src="js/searchGitUser.js"></script>
+
+</body>
+
+</html>

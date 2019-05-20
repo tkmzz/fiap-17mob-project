@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+</head>
+
+<body>
+    <form>
+        <div class="form-group col-md-3">
+            <label for="inputName">Name</label>
+            <input type="text" class="form-control" id="inputName" placeholder="Edit your name here" />
+        </div>
+        <div class="form-group col-md-3">
+            <button type="submit" id="edit" class="btn btn-success btn-lg btn-block">
+                Edit name
+            </button>
+        </div>
+    </form>
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.0.0/firebaseui.js"></script>
+    <script type="text/javascript" src="js/firebase.js"></script>
+    <script type="text/javascript" src="js/edit.js"></script>
+</body>
+
+</html>

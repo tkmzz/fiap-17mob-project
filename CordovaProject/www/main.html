@@ -7,17 +7,30 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
     <div class="d-flex justify-content-center align-items-center" style="height:80vh">
-        <div class="text-center">
+        <div class="w-75 text-center">
+            <img id="camera" src="./img/camera.png">
             <div>
-                <h1 id="name" class="text-center">Welcome </h1>
+                <h1 id="name" class="text-center"></h1>
             </div>
-            <button type="submit" id="logout" class="btn btn-danger btn-lg btn-block">
-                Log out
-            </button>
+            <div class="form-group col-md-3">
+                <button type="submit" id="edit" class="btn btn-primary btn-lg btn-block">
+                    Edit profile
+                </button>
+                <button type="submit" id="takePhoto" class="btn btn-primary btn-lg btn-block">
+                    Take photo
+                </button>
+                <button type="submit" id="search" class="btn btn-primary btn-lg btn-block">
+                    Github search
+                </button>
+                <button type="submit" id="logout" class="btn btn-danger btn-lg btn-block">
+                    Log out
+                </button>
+            </div>
         </div>
     </div>
 
@@ -27,7 +40,7 @@
     <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
     <script src="https://cdn.firebase.com/libs/firebaseui/3.0.0/firebaseui.js"></script>
-    <script type="text/javascript" src="js/global.js"></script>
+    <script type="text/javascript" src="js/firebase.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
 </body>
