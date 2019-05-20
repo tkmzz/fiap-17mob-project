@@ -9,6 +9,15 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "br.com.luiz"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "br.com.luiz"
+    },
+    "cordova-plugin-http": {
+      "PACKAGE_NAME": "br.com.luiz"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "br.com.luiz"
     }
   },
   "dependent_plugins": {}

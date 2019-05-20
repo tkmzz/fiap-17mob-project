@@ -1,9 +1,8 @@
-var user = JSON.parse(sessionStorage.getItem('user'));
-console.log(user)
+var user = JSON.parse(sessionStorage.getItem('users'));
 
 
-firebase.database().ref('/user/' + user.uid).once('value').then(function (snapshot) {
-    document.getElementById("nome").innerHTML = "Nome: " + snapshot.val().name
+firebase.database().ref('/users/' + user.uid).once('value').then(function (snapshot) {
+    document.getElementById("name").innerHTML = "Name: " + snapshot.val().name
 });
 
 
